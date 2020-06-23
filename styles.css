@@ -1,0 +1,31 @@
+*{
+   font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+fieldset{
+    background-color: rgb(133, 209, 228);
+}
+.nombre, .edad, .profesion,
+.dormitorio, .tipo, .precio,
+.zona, .extra{
+    display: inline-block;
+    width: 120px;
+}
+.div-header {  
+    display: flex;
+    align-items: flex-end;
+}
+.header-title {
+    color: rgb(13, 13, 136);
+    margin: 0;
+}
+
+.datosPersonales, .datosVivienda{
+    font-size: 20px;
+    color: white;
+    background-color: rgb(13, 13, 136);
+}

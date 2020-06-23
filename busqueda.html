@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmobiliaria Lindavista</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="div-header">
+            <img src="rotulo_lindavista.gif" alt="Imagen Referencia" id="header-img">
+
+            <h1 class="header-title">Inmobiliaria Lindavista</h1> 
+        </div> 
+    </header>
+    <hr>
+    <main>
+        <h2>Búsqueda de vivienda</h2>
+        <p>Ayúdenos a encontrar la vivienda que mejor se ajusta sus necesidades. Por favor, rellene cuidadosamente el siguiente formulario</p>
+        <form action="http://www.lsi.us.es/cursos/cursophp/dihm/busca_vivienda.php" method="POST" id="formulario">
+            <fieldset>
+                <legend class="datosPersonales">Datos personales</legend>
+
+                <label for="nombre" class="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+                <br><br>
+                <div id="edad">
+                    <label for="edad" class="edad">Edad  </label>
+
+                    <input type="radio" name="edad" value="menos de 20" id="0-20">
+                    <label for="0-20">Menos de 20</label>
+
+                    <input type="radio" name="edad" value="de 21 a 30" id="21-30">
+                    <label for="21-30">De 21 a 30</label>
+
+                    <input type="radio" name="edad" value="de 31 a 40" id="31-40">
+                    <label for="31-40">De 31 a 40</label>
+                    
+                    <input type="radio" name="edad" value="más de 40" id="40-">
+                    <label for="40-">Más de 40</label>
+                </div>
+                <br>
+                <label for="profesion" class="profesion">Profesión</label>
+                <select name="profesion" id="profesion">
+                    <option value="" selected="true" disabled="disabled">Seleccione una profesión</option>
+                    <option value="funcionario">Funcionario</option>
+                    <option value="profesion Liberal">Profesión Liberal</option>
+                    <option value="empresario">Empresario</option>
+                    <option value="artista">Artista</option>
+                    <option value="deportista">Deportista</option>
+                </select>
+
+            </fieldset>
+        
+            <br><br>
+        
+            <fieldset>
+                <legend class="datosVivienda">Datos de la vivienda buscada</legend>
+
+                <div id="dormitorio">
+                    <label for="dormitorio" class="dormitorio">Dormitorios</label>
+                    <input type="radio" name="ndormitorios" id="1">
+                    <label for="1">1</label>
+
+                    <input type="radio" name="ndormitorios" id="2">
+                    <label for="2">2</label>
+
+                    <input type="radio" name="ndormitorios" id="3">
+                    <label for="3">3</label>
+
+                    <input type="radio" name="ndormitorios" id="4">
+                    <label for="4">4</label>
+
+                    <input type="radio" name="dormitorio" id="5">
+                    <label for="5">5</label>
+                </div>
+                <br>
+                <label for="tipo" class="tipo">Tipo</label>
+                <select name="tipo" id="tipo">
+                    <option value="" selected="true" disabled="disabled">Seleccione un tipo</option>
+                    <option value="piso">Piso</option>
+                    <option value="adosado">Adosado</option>
+                    <option value="chalet">Chalet</option>
+                    <option value="casa">Casa</option>
+                </select>
+                <br><br>
+                <div id=precio>
+                    <label for="precio" class="precio">Precio($)</label>
+                    <input type="radio" name="precio" id="&lt100">
+                    <label for="&lt100">&lt100.000</label>
+
+                    <input type="radio" name="precio" id="100-200">
+                    <label for="100-200">100.000-200.000</label>
+
+                    <input type="radio" name="precio" id="200-300">
+                    <label for="200-300">200.000-300.000</label>
+
+                    <input type="radio" name="precio" id="&gt300">
+                    <label for="&gt300">&gt300.000</label>
+                </div>
+                <br>
+                <label for="zona" class="zona">Zona</label>
+                <select name="zona" id="zona">
+                    <option value="" selected="true" disabled="disabled">Seleccione una o más zonas</option>
+                    <option value="centro">Centro</option>
+                    <option value="nervion">Nervión</option>
+                    <option value="triana">Triana</option>
+                    <option value="aljarafe">Aljarafe</option>
+                    <option value="macarena">Macarena</option>
+                </select>
+                <br><br>
+                <div id=extra>
+                    <label for="extra" class="extra">Extras</label>
+                    <input type="checkbox" name="extras" id="piscina">
+                    <label for="piscina">Piscina</label>
+                    
+                    <input type="checkbox" name="extras" id="jardin">
+                    <label for="jardin">Jardín</label>
+
+                    <input type="checkbox" name="extras" id="garaje">
+                    <label for="garaje">Garaje</label>
+
+                    <input type="checkbox" name="extras" id="sauna">
+                    <label for="sauna">Sauna</label>
+                </div>
+                <br>
+            </fieldset>
+
+            <div class="confirmacion" id="confirmacion">
+                <br>
+                <label><input type="checkbox" name="incluir" id="confirmacion">Deseo recibir información acerca de futuras promociones de inmobiliaria Lindavista</label>
+                <br><br>
+                <input type="submit" value="Enviar Formulario" id="submit" name="enviar">
+                <input type="reset" value="Borrar formulario" name="borrar">
+                <br>
+            </div>
+        </form>
+    </main>
+
+    <br><hr>
+
+    <footer>
+        <p>Inmobiliaria Lindavista</p>
+        <p>Construimos un mundo mejor para ustedes</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
